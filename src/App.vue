@@ -1,6 +1,6 @@
 <template>
   <h1>
-    첫번째 Vue3
+    {{ title }}
   </h1>
 </template>
 
@@ -8,7 +8,12 @@
 
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  data() {
+    return {
+      title: '나의 첫번째 vue3'
+    }
+  }
 }
 </script>
 

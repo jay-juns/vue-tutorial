@@ -2,14 +2,14 @@
   <h1>
     {{ title }}
   </h1>
-  <teleport to=".modals_portal" v-if="showModal">
+  <teleport to="#modalsPortal" v-if="showModal">
     <Modal :header="header" :text="text" theme="dark" @close="toggleModal">
         <h1>Sign up for the give away</h1>
         <p>Grab your blogs for half price!</p>
     </Modal>  
   </teleport>
 
-  <teleport to=".modals_portal" v-if="showModalTwo">
+  <teleport to="#modalsPortal" v-if="showModalTwo">
     <Modal :header="header" :text="text" theme="dark" @close="toggleModalTwo">
         <h1>Sign up to the newletters</h1>
         <p>For updates and promo codes!</p>
